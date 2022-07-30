@@ -1,2 +1,2 @@
-# General-Purpose-Shell
-I don't like the current existing shell scripting languages. So I thought, if it's going to have a weird syntax, it might as well have a weird syntax I like. Also, I'm hoping to be able to use this language for doing quick toy scripts like I used to do in python and js.
+# General Purpose Shell
+I don't like the current existing shell scripting languages. So I thought, if it's going to have a weird syntax, it might as well have a weird syntax I like. Also, I'm hoping to be able to use this language for doing quick toy scripts like I used to do in python and js. It was originally going to be called Multipurpose Shell, but when I saw that the acronym of the language was MPS and thus one letter away from an excellent pun in G, I changed the name to have the GPS acronym.
