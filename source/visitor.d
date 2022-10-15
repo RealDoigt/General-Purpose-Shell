@@ -3,7 +3,7 @@ import expressions;
 
 interface IVisitor(T)
 {
-    /* T visitAssignExpression(Assign expression); */
+    T visitAssignExpression(Assign expression);
     T visitBinaryExpression(Binary expression);
     /* T visitCallExpression(Call expression);
     T visitGroupingExpression(Grouping expression);
