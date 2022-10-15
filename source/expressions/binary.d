@@ -13,4 +13,9 @@ class Binary : Expression
         this.right = right;
         this.operator = operator;
     }
+
+    override T accept(T)(IVisitor!T visitor)
+    {
+        return visitBinaryExpression(this);
+    }
 }
