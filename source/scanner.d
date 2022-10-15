@@ -65,7 +65,7 @@ class Scanner
             "cgi":    TokenType.webServer,
             "term":   TokenType.terminal,
             "is":     TokenType.isType,
-            "err":    TokenType.err,
+            "err":    TokenType.error,
             "cd":     TokenType.changeDirectory,
             "ls":     TokenType.list,
             "man":    TokenType.manual,
@@ -80,7 +80,7 @@ class Scanner
             "chm":    TokenType.changeRights,
             "ed":     TokenType.edit,
             "cat":    TokenType.cat,
-            "sat":    TokenType.sat,
+            "sat":    TokenType.searchCat,
             "wd":     TokenType.currentDirectory,
             "ifc":    TokenType.netInterface,
             "net":    TokenType.netStat,
@@ -110,7 +110,7 @@ class Scanner
             scanToken;
         }
 
-        tokens ~= new Token(TokenType.endOfFile, "", null, line);
+        tokens ~= new Token(TokenType.endOfFile, "", "", line);
         return tokens;
     }
 
@@ -310,10 +310,10 @@ class Scanner
                     value = value.replace("\\t", "\t");
 
                     if (value.length == 1)
-                        addToken(TokenType.characterType, new Box!char(value[0]));
+                        addToken(TokenType.characterType, value[0].to!string);
 
                     else
-                        addToken(TokenType.stringType, new Box!string(value));
+                        addToken(TokenType.stringType, value);
 
                     break;
 
@@ -337,13 +337,13 @@ class Scanner
                     auto dotCount = result.count(".");
 
                     if (dotCount == 1)
-                        addToken(TokenType.decimalNumber, new Box!string(result));
+                        addToken(TokenType.decimalNumber, result);
 
                     else if (dotCount > 1)
                         line.reportError("Too many dots in decimal number: %s".format(result));
 
                     else
-                        addToken(TokenType.integerNumber, new Box!string(source[start..current]));
+                        addToken(TokenType.integerNumber, source[start..current]);
 
                     break;
 
@@ -366,7 +366,7 @@ class Scanner
                         addToken(keywords[source[start..current]]);
 
                     else
-                        addToken(TokenType.identifier, new Box!string(source[start..current]));
+                        addToken(TokenType.identifier, source[start..current]);
 
                     break;
 
@@ -381,7 +381,7 @@ class Scanner
             return source[current++];
         }
 
-        void addToken(TokenType type, BoxedValue litteral = null)
+        void addToken(TokenType type, string litteral = "")
         {
             auto text = source[start..current];
             tokens ~= new Token(type, text, litteral, line);

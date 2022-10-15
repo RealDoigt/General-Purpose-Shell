@@ -10,11 +10,11 @@ class Token
     {
         TokenType _type;
         string _lexeme;
-        BoxedValue _litteral;
+        string _litteral;
         int _line;
     }
 
-    this(TokenType type, string lexeme, BoxedValue litteral, int line)
+    this(TokenType type, string lexeme, string litteral, int line)
     {
         _type = type;
         _line = line;
@@ -22,17 +22,17 @@ class Token
         _litteral = litteral;
     }
 
-    TokenType type()
+    auto type()
     {
         return _type;
     }
 
-    string lexeme()
+    auto lexeme()
     {
         return _lexeme;
     }
 
-    BoxedValue litteral()
+    auto litteral()
     {
         return _litteral;
     }
@@ -44,6 +44,6 @@ class Token
 
     override string toString()
     {
-        return "%s %s %s".format(type, lexeme, litteral !is null ? litteral.toString : "");
+        return "%s %s %s".format(type, lexeme, litteral);
     }
 }
