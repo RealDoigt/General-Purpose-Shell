@@ -1,6 +1,5 @@
 module token_class;
 import token_type;
-import box;
 import std.string;
 import std.variant;
 
