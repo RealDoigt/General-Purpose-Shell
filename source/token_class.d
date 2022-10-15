@@ -8,38 +8,38 @@ class Token
 {
     private
     {
-        TokenType type;
-        string lexeme;
-        BoxedValue litteral;
-        int line;
+        TokenType _type;
+        string _lexeme;
+        BoxedValue _litteral;
+        int _line;
     }
 
     this(TokenType type, string lexeme, BoxedValue litteral, int line)
     {
-        this.type = type;
-        this.line = line;
-        this.lexeme = lexeme;
-        this.litteral = litteral;
+        _type = type;
+        _line = line;
+        _lexeme = lexeme;
+        _litteral = litteral;
     }
 
-    TokenType Type()
+    TokenType type()
     {
-        return type;
+        return _type;
     }
 
-    string Lexeme()
+    string lexeme()
     {
-        return Lexeme;
+        return _lexeme;
     }
 
-    BoxedValue Litteral()
+    BoxedValue litteral()
     {
-        return litteral;
+        return _litteral;
     }
 
-    int Line()
+    int line()
     {
-        return line;
+        return _line;
     }
 
     override string toString()
