@@ -10,5 +10,5 @@ interface IVisitor(T)
     T visitLiteralExpression(Literal expression);
     T visitLogicalExpression(Logical expression);
     T visitUnaryExpression(Unary expression);
-    //T visitVariableExpression(Variable expression);
+    T visitVariableExpression(Variable expression);
 }
