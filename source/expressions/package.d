@@ -9,4 +9,5 @@ public
     import expressions.grouping;
     import expressions.literal;
     import expressions.logical;
+    import expressions.unary;
 }
