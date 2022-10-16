@@ -5,5 +5,5 @@
 	"copyright": "Copyright © 2022, Doigt",
 	"description": "A modern shell written in D.",
 	"license": "MIT",
-	"name": "dsh"
+	"name": "GPS"
 }
