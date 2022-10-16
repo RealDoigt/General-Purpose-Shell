@@ -7,4 +7,5 @@ public
     import expressions.binary;
     import expressions.call;
     import expressions.grouping;
+    import expressions.literal;
 }

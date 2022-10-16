@@ -3,7 +3,10 @@
 		"Doigt"
 	],
 	"copyright": "Copyright © 2022, Doigt",
+	"dependencies": {
+		"sumtype": "~>0.10.2"
+	},
 	"description": "A modern shell written in D.",
 	"license": "MIT",
-	"name": "GPS"
+	"name": "gps"
 }

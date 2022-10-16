@@ -1,4 +1,5 @@
 module variant_type;
+import sumtype;
 
 alias Variant = SumType!
 (
