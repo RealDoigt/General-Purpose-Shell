@@ -1,6 +1,7 @@
 module expressions.call;
 import expressions.expression;
 import token_class;
+import visitor;
 
 class Call : Expression
 {
