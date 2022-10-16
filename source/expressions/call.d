@@ -11,9 +11,9 @@ class Call : Expression
 
     this(Expression callee, Token paren, Expression[] arguments)
     {
-        this.arguments = arguments;
-        this.callee = callee;
         this.paren = paren;
+        this.callee = callee;
+        this.arguments = arguments;
     }
 
     override T accept(T)(IVisitor!T visitor)
