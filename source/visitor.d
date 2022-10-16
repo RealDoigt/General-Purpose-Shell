@@ -8,7 +8,7 @@ interface IVisitor(T)
     T visitCallExpression(Call expression);
     T visitGroupingExpression(Grouping expression);
     T visitLiteralExpression(Literal expression);
-    //T visitLogicalExpression(Logical expression);
+    T visitLogicalExpression(Logical expression);
     //T visitUnaryExpression(Unary expression);
     //T visitVariableExpression(Variable expression);
 }

@@ -8,4 +8,5 @@ public
     import expressions.call;
     import expressions.grouping;
     import expressions.literal;
+    import expressions.logical;
 }
