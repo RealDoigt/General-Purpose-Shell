@@ -11,4 +11,5 @@ public
     import expressions.logical;
     import expressions.unary;
     import expressions.variable;
+    import expressions.visitor;
 }

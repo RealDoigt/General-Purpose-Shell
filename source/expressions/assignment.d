@@ -1,7 +1,6 @@
 module expressions.assignment;
-import expressions.expression;
+import expressions;
 import token_class;
-import visitor;
 
 class Assign : Expression
 {

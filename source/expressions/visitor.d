@@ -1,4 +1,4 @@
-module visitor;
+module expressions.visitor;
 import expressions;
 
 interface IVisitor(T)

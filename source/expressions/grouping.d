@@ -1,7 +1,6 @@
 module expressions.grouping;
-import expressions.expression;
+import expressions;
 import token_class;
-import visitor;
 
 class Grouping : Expression
 {

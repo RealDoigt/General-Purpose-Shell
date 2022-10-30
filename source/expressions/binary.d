@@ -1,7 +1,6 @@
 module expressions.binary;
-import expressions.expression;
+import expressions;
 import token_class;
-import visitor;
 
 class Binary : Expression
 {

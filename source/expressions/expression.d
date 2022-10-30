@@ -1,6 +1,6 @@
 module expressions.expression;
 import token_class;
-import visitor;
+import expressions;
 
 abstract class Expression
 {

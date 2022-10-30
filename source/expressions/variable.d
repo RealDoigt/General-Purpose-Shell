@@ -1,7 +1,6 @@
 module expressions.variable;
-import expressions.expression;
+import expressions;
 import token_class;
-import visitor;
 
 class Variable : Expression
 {

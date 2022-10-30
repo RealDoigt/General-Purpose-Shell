@@ -1,8 +1,7 @@
 module expressions.literal;
-import expressions.expression;
+import expressions;
 import variant_type;
 import token_class;
-import visitor;
 
 class Literal : Expression
 {
