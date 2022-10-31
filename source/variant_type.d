@@ -1,5 +1,5 @@
 module variant_type;
-import sumtype;
+import std.sumtype;
 
 alias Variant = SumType!
 (
