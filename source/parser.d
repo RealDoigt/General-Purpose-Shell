@@ -9,6 +9,21 @@ class Parser
         Token[] tokens;
         int current;
 
+        Expression equality()
+        {
+            auto e = comparison;
+
+            while (match(notEqual, equal))
+            {
+                auto op = previous,
+                     right = comparison;
+
+                e = Binary(e, op, right);
+            }
+
+            return e;
+        }
+
         Expression expression()
         {
             return equality;
