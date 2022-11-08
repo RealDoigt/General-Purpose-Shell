@@ -10,6 +10,14 @@ class Parser
         Token[] tokens;
         int current;
 
+
+
+        auto advance()
+        {
+            if (!isAtEnd) ++current;
+            return previous;
+        }
+
         bool check(TokenType type)
         {
             if (isAtEnd) return false;
