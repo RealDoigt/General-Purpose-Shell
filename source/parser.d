@@ -10,7 +10,15 @@ class Parser
         Token[] tokens;
         int current;
 
+        auto peek()
+        {
+            return tokens[current];
+        }
 
+        bool isAtEnd()
+        {
+            return peek.type = TokenType.endOfFile;
+        }
 
         auto advance()
         {
@@ -40,7 +48,7 @@ class Parser
         {
             auto e = comparison;
 
-            while (match(notEqual, equal))
+            while (match(TokenType.notEqual, TokenType.equal))
             {
                 auto op = previous,
                      right = comparison;
