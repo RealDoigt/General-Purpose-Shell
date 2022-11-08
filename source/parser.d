@@ -1,5 +1,6 @@
 module parser;
 import token_class;
+import expressions;
 
 class Parser
 {
@@ -7,6 +8,11 @@ class Parser
     {
         Token[] tokens;
         int current;
+
+        Expression expression()
+        {
+            return equality;
+        }
     }
 
     this(Token[] tokens)
