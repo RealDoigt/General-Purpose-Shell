@@ -10,6 +10,11 @@ class Parser
         Token[] tokens;
         int current;
 
+        auto previous()
+        {
+            return tokens[current - 1];
+        }
+
         auto peek()
         {
             return tokens[current];
