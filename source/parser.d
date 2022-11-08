@@ -1,4 +1,5 @@
 module parser;
+import token_type;
 import token_class;
 import expressions;
 
@@ -9,7 +10,19 @@ class Parser
         Token[] tokens;
         int current;
 
-        Expression equality()
+        bool match(TokenType types ...)
+        {
+            foreach (t; types)
+                if (check(type))
+                {
+                    advance;
+                    return true;
+                }
+
+            return false;
+        }
+
+        auto equality()
         {
             auto e = comparison;
 
@@ -24,7 +37,7 @@ class Parser
             return e;
         }
 
-        Expression expression()
+        auto expression()
         {
             return equality;
         }
