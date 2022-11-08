@@ -10,6 +10,12 @@ class Parser
         Token[] tokens;
         int current;
 
+        bool check(TokenType type)
+        {
+            if (isAtEnd) return false;
+            return peek.type == type;
+        }
+
         bool match(TokenType types ...)
         {
             foreach (t; types)
