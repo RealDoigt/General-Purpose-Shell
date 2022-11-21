@@ -45,7 +45,7 @@ class Scanner
             "smol":   TokenType.smolModifier,
             "if":     TokenType.ifCond,
             "elif":   TokenType.elseIf,
-            "unless": TokenType.unless,
+            "un":     TokenType.unless,
             "elun":   TokenType.elseUnless,
             "else":   TokenType.elseCond,
             "switch": TokenType.switchCond,
@@ -132,7 +132,6 @@ class Scanner
                 case ']': addToken(TokenType.rightBracket);     break;
                 case ';': addToken(TokenType.semiColon);        break;
                 case ',': addToken(TokenType.comma);            break;
-                case ':': addToken(TokenType.memberOf);         break;
 
                 case '+':
 
