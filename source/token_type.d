@@ -89,7 +89,7 @@ enum TokenType
     bigModifier,   // big
     smolModifier,  // smol
     ifCond,        // if
-    unless,        // unless
+    unless,        // un
     elseIf,        // elif
     elseUnless,    // elun
     elseCond,      // else
