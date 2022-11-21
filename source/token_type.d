@@ -24,7 +24,6 @@ enum TokenType
     modulo,           // %
     ternary,          // ?
     concatenate,      // ~
-    memberOf,         // :
 
     // dual-character tokens
     leftShift,          // <<
@@ -100,7 +99,7 @@ enum TokenType
     forEach,       // each
     forLoop,       // for
     caseCond,      // case
-    brick,         // brk   brk <n>   bricks to the nth parent loop   big brk  stops the current loop   smol brk  continue
+    brick,         // brk   brk <n>   bricks to the nth parent loop   big brk  stops the whole loop   smol brk  continue
     tru,           // true
     notTru,        // false
     print,         // out
@@ -110,7 +109,6 @@ enum TokenType
     graphical,     // gui
     webServer,     // cgi
     isType,        // is
-    component,     // cmp
 
     // shell commands
     changeDirectory,      // cd
