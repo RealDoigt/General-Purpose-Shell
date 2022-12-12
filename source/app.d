@@ -24,5 +24,5 @@ void runFile(string path)
 void main(string[] args)
 {
     if (args.length == 2) args[1].runFile;
-    else "A Language Interpreter usage: ali <file>".writeln;
+    else "usage: gps <file>".writeln;
 }
