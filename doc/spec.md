@@ -38,13 +38,17 @@ Examples of valid numeric literals:
 
 ### String
 
-A string literal is defined as any character sequence enclosed within a pair of single quotes (`'`) which isn't an unescaped single quote. See escape sequences later.
+A string literal is defined as any character sequence enclosed within a pair of single quotes (`'`) which isn't an unescaped single quote.
 
 Examples of valid string literals:
 `'a'`
 `'GPS'`
 `'hguhdsjfgajthruaghuasghkflsvhkjabiertgfiydfgbdshafvbdhklasfgbryaf'`
 `'\'hello\''`
+
+##### Escape sequences
+
+Escape sequences are special character sequences which start with the character `\`
 
 ## Constants
 
@@ -66,3 +70,4 @@ A string constant is defined as any string literal which is comprised of more th
 
 A character constant is defined as any string literal which is comprised of only one character if we remove the single quotes and any escape character.
 
+##
