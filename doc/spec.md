@@ -13,7 +13,23 @@ This is not a tutorial nor a guide to learn this language. Nothing prevents you 
 
 ## Literals
 
-There are three types of literals: boolean literals, numeric literals and string literals. A boolean literal is defined as being one of two valid keywords; `true` or `false`. A numeric
+There are three types of literals: binary literals, numeric literals and string literals.
+
+### Boolean
+
+A boolean literal is defined as being one of two valid keywords; `true` or `false`.
+
+### Numeric
+
+A numeric literal is defined as any sequence of arab numbers (0 to 9) which represent a number. The number sequence may optionally contain a dot and may begin or end with a dot. A valid numeric literal may solely have a dot and nothing else, however there may not be more than one dot.
+
+Examples of valid numeric literals:
+`02143423`
+`5`
+`0.1`
+`.6777`
+`99.`
+`.`
 
 ## Constants
 
