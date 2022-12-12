@@ -1,7 +1,8 @@
 # General Purpose Shell Language Specification
 
-## Abstract
+## Introduction
 
+General Purpose Shell (GPS) is a shell language intended for non-interactive shell scripting, meaning it is not running as an interactive environnment like a terminal or a REPL as Unix shells and Powershell do. It is also intended to have features which allow it to be used as something with which one can use to quickly whip out a prototype for a project idea or a toy script, so it has some crossover into more traditional programming language territory.
 
 ### Forewarning
 This document merely states what a working implementation of the language should have. It doesn't state the reasons behind any the decisions nor the goals of the project. If you are more interested in that, see the goals.md document.
