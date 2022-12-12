@@ -44,7 +44,7 @@ Examples of valid string literals:
 `'a'`
 `'GPS'`
 `'hguhdsjfgajthruaghuasghkflsvhkjabiertgfiydfgbdshafvbdhklasfgbryaf'`
-`'\'hello\'`
+`'\'hello\''`
 
 ## Constants
 
