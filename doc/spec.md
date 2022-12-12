@@ -59,6 +59,9 @@ A decimal constant is defined as any numeric literal which has a dot.
 
 ### String
 
-A string constant is defined as any string literal which is comprised of more than one character if we remove the single quotes and any escape charater.
+A string constant is defined as any string literal which is comprised of more than one character if we remove the single quotes and any escape character.
 
+### Character
+
+A character constant is defined as any string literal which is comprised of only one character if we remove the single quotes and any escape character.
 
