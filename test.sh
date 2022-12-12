@@ -1,4 +1,4 @@
-#!/Documents/d projs/dsh
+#!/Documents/GitHub/General-Purpose-Shell/gps
 
 term;
 
