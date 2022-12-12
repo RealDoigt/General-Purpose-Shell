@@ -25,11 +25,21 @@ A numeric literal is defined as any sequence of arab numbers (0 to 9) which repr
 
 Examples of valid numeric literals:
 `02143423`
-`5`
+`53`
+`4`
 `0.1`
 `.6777`
 `99.`
 `.`
+`1111111111111`
+
+### String
+
+A string literal is defined as any character sequence enclosed within a pair of single quotes (`'`).
+Examples of valid string literals:
+`'a'`
+`'GPS'`
+`'hguhdsjfgajthruaghuasghkflsvhkjabiertgfiydfgbdshafvbdhklasfgbryaf'`
 
 ## Constants
 
