@@ -48,7 +48,7 @@ Examples of valid string literals:
 
 ##### Escape sequences
 
-Escape sequences are special character sequences which begin with the backslash character (`\`). They are used for characters that are not practical to type on a keyboard:
+Escape sequences are special character sequences which begin with the backslash character (`\`). They are used for characters that are not practical to type on a keyboard or characters which have a special functionality:
 
 `\t`
 `\r`
