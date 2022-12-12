@@ -47,7 +47,7 @@ Examples of valid string literals:
 
 ## Constants
 
-GPS lets you define integer, decimal, string and character constants.
+GPS lets you define integer, decimal, string and character constants. Immutable variables are defined further down the document and are not the subject of this section.
 
 ### Integer
 
