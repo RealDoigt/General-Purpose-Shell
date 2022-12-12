@@ -287,8 +287,8 @@ class Scanner
 
                     while (peek != '\'' && !isAtEnd)
                     {
+                        //if (matchPair("\\", "'")) continue; TODO test this
                         if (peek == '\n') ++line;
-
                         advance;
                     }
 
@@ -306,6 +306,7 @@ class Scanner
                     value = value.replace("\\n", "\n");
                     value = value.replace("\\r", "\r");
                     value = value.replace("\\t", "\t");
+                    //value = value.replace("\\'", "\'"); TODO test this
 
                     if (value.length == 1)
                         addToken(TokenType.characterType, value[0].to!string);
