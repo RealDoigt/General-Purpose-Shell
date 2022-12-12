@@ -329,7 +329,7 @@ class Scanner
                     if (result.startsWith(".")) result = "0" ~ result;
                     if (result.endsWith(".")) result ~= "0";
 
-                    // numbers aren't immediately converted; that commes later
+                    // numbers aren't immediately converted; that comes later
                     // when we know their type.
 
                     auto dotCount = result.count(".");
