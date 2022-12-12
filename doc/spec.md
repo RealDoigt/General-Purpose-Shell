@@ -81,4 +81,11 @@ A string constant is defined as any string literal which is comprised of more th
 
 A character constant is defined as any string literal which is comprised of only one character if we remove the single quotes and any escape character.
 
-##
+## Types
+
+The type system in this language is both static and dynamic. `var` is the keyword reserved for dynamically typed variables.
+For the other keywords related to types, see the section on reserved keywords.
+
+All constants have a default type; integer constants are signed and 32-bit, string/character constants are utf-8 and decimal constants are of the 64-bit binary format; there should be no real decimal floating point type in GPS.
+
+
