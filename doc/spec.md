@@ -9,6 +9,8 @@ This document merely states what a working implementation of the language should
 
 At this point in time, the language is still very much a work in progress and thus, the details written here may not be final. As issues encountered during development and testing arise, things may be added or removed from the language.
 
+Again, as is written above, the language is still very much a work in progress. This document states what an implementation _should_ have. It does _not_ reflect the current state of the language interpreter written by Doigt.
+
 This is not a tutorial nor a guide to learn this language. Nothing prevents you to use the language specification for this purpose, but you should keep in mind that it is not its intended purpose.
 
 ## Literals
@@ -35,18 +37,28 @@ Examples of valid numeric literals:
 
 ### String
 
-A string literal is defined as any character sequence enclosed within a pair of single quotes (`'`).
+A string literal is defined as any character sequence enclosed within a pair of single quotes (`'`) which isn't an unescaped single quote. See escape sequences later.
+
 Examples of valid string literals:
 `'a'`
 `'GPS'`
 `'hguhdsjfgajthruaghuasghkflsvhkjabiertgfiydfgbdshafvbdhklasfgbryaf'`
+`'\'hello\'`
 
 ## Constants
 
-GPS lets you define integer, decimal, character and string constants.
+GPS lets you define integer, decimal, string and character constants.
 
+### Integer
 
+An integer constant is defined as any numeric literal which doesn't have a dot.
 
-A numeric constant is represented by using a valid numeric literal. The value of an i constant is always a . A string constant is represented using a valid string literal. A character constant is represented by using a string literal which only has the length of exactly one character if we remove the single quotes and the escape character.
+### Decimal
+
+A decimal constant is defined as any numeric literal which has a dot.
+
+### String
+
+A string constant is defined as any string literal which is comprised of more than one character if we remove the single quotes and any escape chara
 
 
