@@ -83,9 +83,12 @@ A character constant is defined as any string literal which is comprised of only
 
 ## Types
 
-The type system in this language is both static and dynamic. `var` is the keyword reserved for dynamically typed variables.
-For the other keywords related to types, see the section on reserved keywords.
+The type system in this language is both static and dynamic. `var` is the keyword reserved for dynamically typed variables called variants. For the keywords of other types, see the section on reserved keywords.
 
 All constants have a default type; integer constants are signed and 32-bit, string/character constants are utf-8 and decimal constants are of the 64-bit binary format; there should be no real decimal floating point type in GPS.
 
+#### The Difference Between var and var[]
+##### ...and var and var[var]
+
+A variant is a type of variable which can hold any kind of value. Anything can go in there. So you can store an array in a `var`. `var[]` on the other hand is something which blurs the lines between a static type a variant type; it indicates an array of variants so the compiler knows that the elements inside are all variants. This is also similar for `var[var]`, which indicates a map of variants which use variants as index. Since the map is proper static type, you could have `var[str]` where the map has string keys and variant values.
 
