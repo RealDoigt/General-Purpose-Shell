@@ -10,3 +10,17 @@ This document merely states what a working implementation of the language should
 At this point in time, the language is still very much a work in progress and thus, the details written here may not be final. As issues encountered during development and testing arise, things may be added or removed from the language.
 
 This is not a tutorial nor a guide to learn this language. Nothing prevents you to use the language specification for this purpose, but you should keep in mind that it is not its intended purpose.
+
+## Literals
+
+There are three types of literals: boolean literals, numeric literals and string literals. A boolean literal is defined as being one of two valid keywords; `true` or `false`. A numeric
+
+## Constants
+
+GPS lets you define integer, decimal, character and string constants.
+
+
+
+A numeric constant is represented by using a valid numeric literal. The value of an i constant is always a . A string constant is represented using a valid string literal. A character constant is represented by using a string literal which only has the length of exactly one character if we remove the single quotes and the escape character.
+
+
