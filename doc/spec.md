@@ -149,6 +149,36 @@ Maps work almost exactly the same as arrays, except one can customize the type o
 
 A variant is a type of variable which can hold any kind of value. Anything can go in there. So you can store an array in a `var`. `var[]` on the other hand is something which blurs the lines between a static type a dynamic type; it indicates an array of variants so the compiler knows that the elements inside are all variants. This is also similar for `var[var]`, which indicates a map of variants which use variants as index. Since the map is proper static type, you could have `var[str]` where the map has string keys and variant values.
 
-### Functions
+## Functions
 
-Functions are variables, they work exactly the same as regular variables but they can also be used with the `void` type, which is a fake type not usable with other kinds of variables, to indicate that the function returns nothing when it is called.
+Functions are variables, they work exactly the same as regular variables but they can also be used with the `void` type, which is a fake type not usable with other kinds of variables, to indicate that the function returns nothing when it is called. It doesn't matter where the parentheses are when declaring a function, for example, both are valid:
+
+`int() getFour => 4;`
+
+`int getFour() => 4;`
+
+Multiline functions require the function code to be enclosed within curly brackets (`{}`) after the assign operator. In single-line functions which return a value, the assignment operator (`=`) can be omitted.
+
+### Parameters
+
+#### Static
+
+The `static` modifier means the parameter will not be passed as a reference to another function.
+
+#### Constant
+
+The constant (`cst`) modifier marks a parameter as read-only. It cannot be assigned value within the function body.
+
+#### Reference
+
+The reference (`ref`) modifer marks a parameter as holding the address of a variable (also known as a pointer in other languages) rather than a value. This means that if the parameter's value is modified, the variable used in the function call is also modified for example:
+
+```sh
+void(ref int i) myFun = i = 1;
+
+int a = 5;
+myFun(a);
+out a == 5; # a's value was changed!
+```
+
+The programmer must never have to explicitely dereference like in C. Dereferencing must be handled by the implementation.
