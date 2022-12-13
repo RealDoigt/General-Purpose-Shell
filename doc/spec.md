@@ -122,6 +122,27 @@ There are multiple ways to assign or add a value to an array:
 * By directly accessing a value by index. The array index 0 in this language: `myArr[0] = 'world';`
 * By setting all values to one value: `myArr = 'world';`
 * By concatenating in values of another array or value using the concat operator: `myArr = myArr ~ ['a', 'b'] ~ 'c'`
+  * There's no deconcat operator to remove elements. See below.
+* Using the repeat operator to add multiple times the same values: `myArr = [4, 5] *~ 10;`
+
+#### Removing values
+
+To remove a value, you have to use the `pop` keyword. There are three ways to use it to remove values:
+
+* Writing the array's identifier and the keyword in that order; it will remove the last element of the array: `myArr pop;`
+* Adding a number after the keyword which is the index of the element to remove: `myArr pop 0;`
+* Adding a sequence of values enclosed in brackets after the keyword. This will remove the first instance of each of these values in the array: `myArr pop ['hello'];`
+
+### Maps
+
+Maps work almost exactly the same as arrays, except one can customize the type of the index, which is called a key when it refers to a map's index. Key differences in usage examples:
+
+* Declaration (the key's type is between the brackets): `str[chr] myMap;`
+* Empty map: `var myVarMap = [var];` `myMap = [chr];`
+* Sequence assignment not possible.
+* If a key doesn't exist, it is created: `myMap['h'] = 'Hello';`
+* The concat operator cannot be used with maps.
+* The repeat operator cannot be used with maps.
 
 #### The Difference Between var and var[]
 ##### ...and var and var[var]
