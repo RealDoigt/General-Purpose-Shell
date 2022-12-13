@@ -90,5 +90,5 @@ All constants have a default type; integer constants are signed and 32-bit, stri
 #### The Difference Between var and var[]
 ##### ...and var and var[var]
 
-A variant is a type of variable which can hold any kind of value. Anything can go in there. So you can store an array in a `var`. `var[]` on the other hand is something which blurs the lines between a static type a variant type; it indicates an array of variants so the compiler knows that the elements inside are all variants. This is also similar for `var[var]`, which indicates a map of variants which use variants as index. Since the map is proper static type, you could have `var[str]` where the map has string keys and variant values.
+A variant is a type of variable which can hold any kind of value. Anything can go in there. So you can store an array in a `var`. `var[]` on the other hand is something which blurs the lines between a static type a dynamic type; it indicates an array of variants so the compiler knows that the elements inside are all variants. This is also similar for `var[var]`, which indicates a map of variants which use variants as index. Since the map is proper static type, you could have `var[str]` where the map has string keys and variant values.
 
