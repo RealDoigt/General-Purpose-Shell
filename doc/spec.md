@@ -111,6 +111,16 @@ An array is a variable which can hold many other variables. To declare an array,
 
 `if (hello[0] == 'h')`
 
+In GPS, arrays are dynamic, meaning they don't have a fixed size. One can keep adding or removing elements as often as one likes.
+
+#### Array value assignment
+
+There are multiple ways to assign or add a value to an array:
+
+* An array can be initialized by enclosing a comma-separated sequence of values within brackets (`[]`) after the assign operator (`=`) like this: `var myArr = ['hello', 1, 2.3, 'c'];`
+  * The same principle can be used to make the array empty: `myArr = [];`
+*
+
 #### The Difference Between var and var[]
 ##### ...and var and var[var]
 
