@@ -119,7 +119,7 @@ There are multiple ways to assign or add a value to an array:
 
 * An array can be initialized by enclosing a comma-separated sequence of values within brackets (`[]`) after the assign operator (`=`) like this: `var myArr = ['hello', 1, 2.3, 'c'];`
   * The same principle can be used to make the array empty: `myArr = [];`
-*
+* By directly accessing a value by index. The array index 0 in this language: `myArr[0] = 'world';`
 
 #### The Difference Between var and var[]
 ##### ...and var and var[var]
