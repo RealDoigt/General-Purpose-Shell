@@ -118,4 +118,4 @@ A variant is a type of variable which can hold any kind of value. Anything can g
 
 ### Functions
 
-Functions are variables, they work exactly the same as regular variables but they can also be used with the `void` type, which is a fake type not usable with other kinds of variables, to indicate that the function returns nothing when it is called. As the previous sentence suggests,
+Functions are variables, they work exactly the same as regular variables but they can also be used with the `void` type, which is a fake type not usable with other kinds of variables, to indicate that the function returns nothing when it is called.
