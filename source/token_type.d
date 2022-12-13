@@ -63,7 +63,7 @@ enum TokenType
     castLeftShift,      // ?<<
     castRightShift,     // ?>>
 
-    // litterals
+    // literals
     identifier,
     decimalNumber,
     integerNumber,
@@ -82,7 +82,7 @@ enum TokenType
     variant,       // var  anything        big var  invalid          smol var  8 bit unt
     variantArray,  // arr  var[]           big arr  invalid          smol arr  8 bit unt[]
     variantDict,   // map  var[var]        big map  invalid          smol map  8 bit unt[var]
-    variantFunct,  // fun
+    variantFunct,  // fun  var()           big fun  invalid          smol fun  8 bit unt()
     stringType,    // str  utf-8 string    big str  utf-16 string    smol str  ascii string
     characterType, // chr  utf-8 char      big chr  utf-16 char      smol chr  ascii char
     bigModifier,   // big
@@ -109,6 +109,7 @@ enum TokenType
     graphical,     // gui
     webServer,     // cgi
     isType,        // is
+    voidType,      // void
 
     // shell commands
     changeDirectory,      // cd
