@@ -151,7 +151,7 @@ A variant is a type of variable which can hold any kind of value. Anything can g
 
 ## Functions
 
-Functions are variables, they work exactly the same as regular variables but they can also be used with the `void` type, which is a fake type not usable with other kinds of variables, to indicate that the function returns nothing when it is called. It doesn't matter where the parentheses are when declaring a function, for example, both are valid:
+Functions are variables. They work exactly the same as regular variables but they can also be used with the `void` type, which is a fake type not usable with other kinds of variables, to indicate that the function returns nothing when it is called. It doesn't matter where the parentheses are when declaring a function, for example, both are valid:
 
 `int() getFour => 4;`
 
