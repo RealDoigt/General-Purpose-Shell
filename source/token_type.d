@@ -56,12 +56,15 @@ enum TokenType
     castAnd,            // ?&
     castModulo,         // ?%
     castConcatenate,    // ?~
+    repeat,             // *~
 
     // three-character tokens
     assignLeftShift,    // <<=
     assignRightShift,   // >>=
     castLeftShift,      // ?<<
     castRightShift,     // ?>>
+    castRepeat,         // ?*~
+    assignRepeat,       // *~=
 
     // literals
     identifier,
@@ -110,6 +113,7 @@ enum TokenType
     webServer,     // cgi
     isType,        // is
     voidType,      // void
+    removeElement, // pop
 
     // shell commands
     changeDirectory,      // cd
