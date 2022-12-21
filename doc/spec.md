@@ -147,6 +147,7 @@ Maps work almost exactly the same as arrays, except one can customize the type o
 * If a key doesn't exist, it is created: `myMap['h'] = 'Hello';`
 * The concat operator cannot be used with maps.
 * The repeat operator cannot be used with maps.
+* The `pop` keyword needs a key to remove an element from the map: `pop myMap 'h';`
 
 #### The Difference Between var and var[]
 ##### ...and var and var[var]
