@@ -12,7 +12,7 @@ At this point in time, the language is still very much a work in progress and th
 
 Again, as is written above, the language is still very much a work in progress. This document states what an implementation _should_ have. It does _not_ reflect the current state of the language interpreter written by Doigt.
 
-This is not a tutorial nor a guide to learn this language. Nothing prevents you to use the language specification for this purpose, but you should keep in mind that it is not its intended purpose.
+This is not a tutorial nor a guide to learn this language. Nothing prevents anyone to use the language specification for this purpose, but they should keep in mind that it is not its intended purpose.
 
 ## Literals
 
