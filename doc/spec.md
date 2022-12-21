@@ -160,7 +160,7 @@ Functions are variables. They work exactly the same as regular variables but the
 
 `int() getFour => 4;`
 
-Multiline functions require the function code to be enclosed within curly brackets (`{}`) after the assign operator. In single-line functions which return a value, the assignment operator (`=`) can be omitted.
+Functions usually require the function code to be enclosed within curly brackets (`{}`) after the assign operator. In single-line functions which return a value, the assignment operator (`=`) and the curly brackets can be omitted.
 
 ### Parameters
 
@@ -177,7 +177,7 @@ The constant (`cst`) modifier marks a parameter as read-only. It cannot be assig
 The reference (`ref`) modifer marks a parameter as holding the address of a variable (also known as a pointer in other languages) rather than a value. This means that if the parameter's value is modified, the variable used in the function call is also modified for example:
 
 ```sh
-void(ref int i) myFun = i = 1;
+void(ref int i) myFun = {i = 1};
 
 int a = 5;
 myFun(a);
