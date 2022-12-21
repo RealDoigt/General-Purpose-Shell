@@ -156,13 +156,19 @@ A variant is a type of variable which can hold any kind of value. Anything can g
 
 ## Functions
 
-Functions are variables. They work exactly the same as regular variables but they can also be used with the `void` type, which is a fake type not usable with other kinds of variables, to indicate that the function returns nothing when it is called.
+Functions are not variables. However, they bear great similarities with variables but they can also be used with the `void` type, which is a fake type not usable with true variables. `void` is used to indicate that the function returns nothing when it is called.
 
 `int() getFour => 4;`
 
-Functions usually require the function code to be enclosed within curly brackets (`{}`) after the assign operator. In single-line functions which return a value, the assignment operator (`=`) and the curly brackets can be omitted.
+Functions usually require the function code to be enclosed within curly brackets (`{}`) after the assign operator. In single-line functions which return a value, the assign operator (`=`) and the curly brackets can be omitted.
+
+A function signature is anything part of the function code which is before the the assign operator. A function body is anything after the `=`. Those are terms that should be used for related errors as well as in documentation about GPS.
 
 ### Parameters
+
+Parameters are variables declared inside the parentheses of the function signature. These variables hold a copy of the value that was passed to the function when it was called. Read below for exceptions. 
+
+Parameters may have more than one modifier. The order of the modifiers is unimportant, but they need to be before the type.
 
 #### Static
 
@@ -174,7 +180,7 @@ The constant (`cst`) modifier marks a parameter as read-only. It cannot be assig
 
 #### Reference
 
-The reference (`ref`) modifer marks a parameter as holding the address of a variable (also known as a pointer in other languages) rather than a value. This means that if the parameter's value is modified, the variable used in the function call is also modified for example:
+The reference (`ref`) modifer marks a parameter as holding the address of a variable (also known as a pointer in other languages) rather than a hold a copy of its value. This means that if the parameter's value is modified, the variable used in the function call is also modified for example:
 
 ```sh
 void(ref int i) myFun = {i = 1};
