@@ -151,11 +151,9 @@ A variant is a type of variable which can hold any kind of value. Anything can g
 
 ## Functions
 
-Functions are variables. They work exactly the same as regular variables but they can also be used with the `void` type, which is a fake type not usable with other kinds of variables, to indicate that the function returns nothing when it is called. It doesn't matter where the parentheses are when declaring a function, for example, both are valid:
+Functions are variables. They work exactly the same as regular variables but they can also be used with the `void` type, which is a fake type not usable with other kinds of variables, to indicate that the function returns nothing when it is called.
 
 `int() getFour => 4;`
-
-`int getFour() => 4;`
 
 Multiline functions require the function code to be enclosed within curly brackets (`{}`) after the assign operator. In single-line functions which return a value, the assignment operator (`=`) can be omitted.
 
