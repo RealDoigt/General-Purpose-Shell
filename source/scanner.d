@@ -379,7 +379,7 @@ class Scanner
             }
         }
 
-        char advance()
+        auto advance()
         {
             return source[current++];
         }
@@ -390,7 +390,7 @@ class Scanner
             tokens ~= new Token(type, text, litteral, line);
         }
 
-        bool match(char expected)
+        auto match(char expected)
         {
             if (isAtEnd) return false;
             if (source[current] != expected) return false;
@@ -399,7 +399,7 @@ class Scanner
             return true;
         }
 
-        bool matchPair(char expectedA, char expectedB)
+        auto matchPair(char expectedA, char expectedB)
         {
             if (peek == expectedA && peekNext == expectedB)
             {
@@ -410,13 +410,13 @@ class Scanner
             return false;
         }
 
-        char peek()
+        auto peek()
         {
             if (isAtEnd) return '\0';
             return source[current];
         }
 
-        char peekNext()
+        auto peekNext()
         {
             if (current + 1 >= source.length) return '\0';
             return source[current + 1];
