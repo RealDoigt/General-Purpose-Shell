@@ -95,6 +95,8 @@ All constants have a default type; integer constants are signed and 32-bit, stri
 
 A variable has an identifier, which can be any sequence of alphanumeric characters or an underscore. However, one cannot be allowed to use a reserved keyword to name a variable and variable identifiers don't start with a number. When declaring a variable, it needs type information, which comes before the identifier. It's also the only time when it is legal to add modifiers.
 
+Variables may have more than one modifier. The order of the modifiers is unimportant, but they need to be before the type.
+
 ### Size modifiers
 
 GPS comes with keywords (`big` and `smol`) which alter the byte size of a variable. They are used before the type like in this variable declaration example: `big int my_integer = 1;`. See the section on reserved keywords for more information about what each combo means. At the time of writing this, the only way you can find this information is by looking at the comments in `token_type.d`.
