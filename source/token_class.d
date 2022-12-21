@@ -9,16 +9,16 @@ class Token
     {
         TokenType _type;
         string _lexeme;
-        string _litteral;
+        string _literal;
         int _line;
     }
 
-    this(TokenType type, string lexeme, string litteral, int line)
+    this(TokenType type, string lexeme, string literal, int line)
     {
         _type = type;
         _line = line;
         _lexeme = lexeme;
-        _litteral = litteral;
+        _literal = literal;
     }
 
     auto type()
@@ -31,9 +31,9 @@ class Token
         return _lexeme;
     }
 
-    auto litteral()
+    auto literal()
     {
-        return _litteral;
+        return _literal;
     }
 
     int line()
@@ -43,6 +43,6 @@ class Token
 
     override string toString()
     {
-        return "%s %s %s".format(type, lexeme, litteral);
+        return "%s %s %s".format(type, lexeme, literal);
     }
 }
