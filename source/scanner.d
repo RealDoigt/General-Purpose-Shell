@@ -53,6 +53,7 @@ class Scanner
             "loop":   TokenType.forever,
             "each":   TokenType.forEach,
             "for":    TokenType.forLoop,
+            "whl":    TokenType.whileLoop,
             "case":   TokenType.caseCond,
             "brk":    TokenType.brick,
             "true":   TokenType.tru,
