@@ -56,6 +56,10 @@ Escape sequences are special character sequences which begin with the backslash 
 `\0`
 `\'`
 `\\`
+`\b`
+`\v`
+`\a`
+`\f`
 
 If an implementer finds out that a desired host platform doesn't support well other characters which are normally well supported on modern platforms, the implementer should add more escape sequences to accomodate the host platform.
 
