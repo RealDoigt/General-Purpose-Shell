@@ -89,7 +89,7 @@ A character constant is defined as any string literal which is comprised of only
 
 The type system in this language is both static and dynamic. `var` is the keyword reserved for dynamically typed variables called variants. For the keywords of other types, see the section on reserved keywords.
 
-All constants have a default type; integer constants are signed and 32-bit, string/character constants are utf-8 and decimal constants are of the 64-bit binary format; there should be no real decimal floating point type in GPS.
+All constants have a default type; integer constants are signed and 32-bit, string/character constants are utf-8 and decimal constants are of the 64-bit binary format; there should be no true decimal floating point type in GPS.
 
 ## Variables
 
