@@ -168,7 +168,7 @@ A function signature is anything part of the function code which is before the t
 
 ### Parameters
 
-Parameters are variables declared inside the parentheses of the function signature and which are separated by commas when there is more than one parameter. These variables hold a copy of the value that was passed to the function when it was called. Read sections below for exceptions. 
+Parameters are variables declared inside the parentheses of the function signature and which are separated by commas when there is more than one parameter. These variables hold a copy of the value that is passed to the function when it is being called. Read sections below for exceptions.
 
 Parameters may have more than one modifier. The order of the modifiers is unimportant, but they need to be before the type.
 
