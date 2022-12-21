@@ -183,7 +183,7 @@ The constant (`cst`) modifier marks a parameter as read-only. It cannot be assig
 The reference (`ref`) modifer marks a parameter as holding the address of a variable (also known as a pointer in other languages) rather than a hold a copy of its value. This means that if the parameter's value is modified, the variable used in the function call is also modified for example:
 
 ```sh
-void(ref int i) myFun = {i = 1};
+void(ref int i) myFun = {i = 1;};
 
 int a = 5;
 myFun(a);
