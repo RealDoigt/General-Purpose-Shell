@@ -181,7 +181,7 @@ void(ref int i) myFun = {i = 1};
 
 int a = 5;
 myFun(a);
-out a == 5; # a's value was changed!
+out a == 5; # a's value was changed to 1! Prints 'false' to the console!
 ```
 
 The programmer must never have to explicitely dereference like in C. Dereferencing must be handled by the implementation.
