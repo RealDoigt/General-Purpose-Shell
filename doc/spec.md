@@ -158,7 +158,7 @@ A variant is a type of variable which can hold any kind of value. Anything can g
 
 ## Functions
 
-Functions are not variables. However, they bear great similarities with variables but they can also be used with the `void` type, which is a fake type not usable with true variables. `void` is used to indicate that the function returns nothing when it is called.
+Functions are not variables. However, they bear great similarities with variables. One of the differences is  that they can also be used with the `void` type, which is a fake type not usable with true variables. `void` is used to indicate that the function returns nothing when it is called.
 
 `int() getFour => 4;`
 
