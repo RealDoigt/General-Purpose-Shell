@@ -93,6 +93,21 @@ class Parser
             
             return e;
         }
+        
+        auto term()
+        {
+            e = factor;
+            
+            while(match(TokenType.minus, TokenType.plus))
+            {
+                auto op = previous,
+                     right = factor;
+                     
+                e = Binary(e, op, right);
+            }
+            
+            return e;
+        }
     }
 
     this(Token[] tokens)
