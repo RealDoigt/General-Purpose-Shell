@@ -51,6 +51,7 @@ class Parser
 
         auto equality()
         {
+            // e = expression 
             auto e = comparison;
 
             while (match(TokenType.notEqual, TokenType.equal))
