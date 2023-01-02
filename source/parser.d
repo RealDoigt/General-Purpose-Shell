@@ -69,6 +69,30 @@ class Parser
         {
             return equality;
         }
+        
+        auto comparison()
+        {
+            auto e = term;
+            
+            while 
+            (
+                match
+                (
+                    TokenType.greaterThan, 
+                    TokenType.lowerThan, 
+                    TokenType.greaterThanEqual, 
+                    TokenType.lowerThanEqual
+                )
+            )
+            {
+                auto op = previous,
+                     right = term;
+                     
+                e = Binary(e, op, right);
+            }
+            
+            return e;
+        }
     }
 
     this(Token[] tokens)
