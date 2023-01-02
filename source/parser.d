@@ -108,6 +108,21 @@ class Parser
             
             return e;
         }
+        
+        auto factor()
+        {
+            e = unary;
+            
+            while(match(TokenType.divide, TokenType.multiply))
+            {
+                auto op = previous,
+                     right = factor;
+                     
+                e = Binary(e, op, right);
+            }
+            
+            return e;
+        }
     }
 
     this(Token[] tokens)
