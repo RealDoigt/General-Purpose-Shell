@@ -59,7 +59,7 @@ class Parser
                 auto op = previous,
                      right = comparison;
 
-                e = Binary(e, op, right);
+                e = new Binary(e, op, right);
             }
 
             return e;
@@ -88,7 +88,7 @@ class Parser
                 auto op = previous,
                      right = term;
                      
-                e = Binary(e, op, right);
+                e = new Binary(e, op, right);
             }
             
             return e;
@@ -98,12 +98,12 @@ class Parser
         {
             e = factor;
             
-            while(match(TokenType.minus, TokenType.plus))
+            while (match(TokenType.minus, TokenType.plus))
             {
                 auto op = previous,
                      right = factor;
                      
-                e = Binary(e, op, right);
+                e = new Binary(e, op, right);
             }
             
             return e;
@@ -113,16 +113,30 @@ class Parser
         {
             e = unary;
             
-            while(match(TokenType.divide, TokenType.multiply))
+            while (match(TokenType.divide, TokenType.multiply))
             {
                 auto op = previous,
-                     right = factor;
+                     right = unary;
                      
-                e = Binary(e, op, right);
+                e = new Binary(e, op, right);
             }
             
             return e;
         }
+        
+        auto unary() 
+        {
+            if (match(TokenType.not, TokenType.minus)) 
+            {
+                auto op = previous,
+                     right = unary;
+                     
+                return new Unary(op, right);
+            }
+
+            return primary();
+        }
+
     }
 
     this(Token[] tokens)
