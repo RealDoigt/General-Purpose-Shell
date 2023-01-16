@@ -6,7 +6,7 @@ General Purpose Shell (GPS) is a shell language intended for non-interactive she
 
 ### Forewarning
 
-This document merely states what a working implementation of the language should have. It doesn't state the reasons behind any the decisions nor the goals of the project. If you are more interested in that, see the goals.md document.
+This document merely states what a working implementation of the language should have. It doesn't state the reasons behind any of the decisions nor the goals of the project. If you are more interested in that, see the goals.md document.
 
 At this point in time, the language is still very much a work in progress and thus, the details written here may not be final. As issues encountered during development and testing arise, things may be added or removed from the language.
 
@@ -182,7 +182,7 @@ The constant (`cst`) modifier marks a parameter as read-only. It cannot be assig
 
 #### Reference
 
-The reference (`ref`) modifer marks a parameter as holding the address of a variable (also known as a pointer in other languages) rather than a hold a copy of its value. This means that if the parameter's value is modified, the variable used in the function call is also modified for example:
+The reference (`ref`) modifer marks a parameter as holding the address of a variable (also known as a pointer in other languages) rather than hold a copy of its value. This means that if the parameter's value is modified, the variable used in the function call is also modified, for example:
 
 ```sh
 void(ref int i) myFun = {i = 1;};
