@@ -193,3 +193,29 @@ out a == 5; # a's value was changed to 1, it will therefore 'false' to the conso
 ```
 
 The programmer must never have to explicitely dereference like in C. Dereferencing must be handled by the implementation.
+
+## Glyphs
+
+The language comes with many glyphs which can be used to add meaning to a program without being keywords themselves. A glyph in GPS jargon, is any character or sequence thereof which usually aren't letters of the latin alphabet. There are three types of glyphs in GPS: operators, escape sequences and other glyphs.
+
+### Operators
+
+Operators are glyphs which evaluate to an expression which usually returns a value.
+
+#### Classic operators
+
+General Purpose Shell comes with operators which seasoned programmers will easily recognise:
+
+| Type     | Operator | Description                                                                                      | Usage    |
+|----------|----------|--------------------------------------------------------------------------------------------------|----------|
+|Arithmetic|+         | Returns the sum of two numbers                                                                   | a + b    |
+|Arithmetic|-         | Returns the difference of two numbers                                                            | a - b    |
+|Arithmetic|*         | Returns the product of two numbers                                                               | a * b    |
+|Arithmetic|/         | Returns the quotient of two numbers                                                              | a / b    |
+|Arithmetic|%         | Returns the remainder of the division of two integers                                            | a % b    |
+|Binary    |&         | Returns the result of a bitwise AND operation between two numbers                                | a & b    |
+|Binary    |\|        | Returns the result of a bitwise OR operation between two numbers                                 | a \| b   |
+|Binary    |<<        | Returns the left-shifted value of an integer by a second integer                                 | a << b   |
+|Binary    |>>        | Returns the right-shifted value of an integer by a second integer                                | a >> b   |
+|Logical   |&&        | Returns 'true' if both expressions are true or return any number that isn't 0 (short ciruits)    | a && b   |
+|Logical   |\|\|      | Returns 'true' if either expressions are true or return any number that isn't 0 (short circuits) | a \|\| b |
